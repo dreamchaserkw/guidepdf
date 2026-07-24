@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Étudier en Russie sans se faire piéger — Le guide</title>
+<meta name="description" content="Le guide de A à Z pour préparer ses études en Russie sans tomber dans les arnaques d'agences. Visa, villes, banques, jobs étudiants — écrit par quelqu'un qui l'a vécu.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.cinetpay.com/seamless/main.js"></script>
+<style>
+  :root{
+    --navy:#142942;
+    --navy-2:#1F3A5F;
+    --gold:#C9A24B;
+    --paper:#F6F1E4;
+    --paper-2:#EFE6D0;
+    --alert:#A6402F;
+    --ink:#1B1B18;
+    --white:#FFFDF8;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'IBM Plex Sans', sans-serif;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{
+    font-family:'Fraunces', serif;
+    color:var(--navy);
+    line-height:1.08;
+    letter-spacing:-0.01em;
+  }
+  .mono{
+    font-family:'IBM Plex Mono', monospace;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+  }
+  a{color:inherit;}
+  img{max-width:100%; display:block;}
+  .wrap{max-width:1080px; margin:0 auto; padding:0 24px;}
+  .wrap-narrow{max-width:760px; margin:0 auto; padding:0 24px;}
+
+  /* ---------- STAMP (signature element) ---------- */
+  .stamp{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width:128px; height:128px;
+    border:2.5px solid var(--gold);
+    border-radius:50%;
+    transform:rotate(-9deg);
+    text-align:center;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--gold);
+    position:relative;
+    flex-shrink:0;
+  }
+  .stamp::before{
+    content:"";
+    position:absolute;
+    inset:8px;
+    border:1px dashed var(--gold);
+    border-radius:50%;
+  }
+  .stamp span{padding:0 14px;}
+
+  /* ---------- HEADER ---------- */
+  header{
+    padding:20px 0;
+    border-bottom:1px solid rgba(20,41,66,0.12);
+  }
+  header .wrap{display:flex; align-items:center; justify-content:space-between;}
+  .brand{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    font-size:19px;
+    color:var(--navy);
+  }
+  .brand em{color:var(--gold); font-style:normal;}
+
+  /* ---------- HERO ---------- */
+  .hero{padding:64px 0 40px;}
+  .hero-grid{
+    display:grid;
+    grid-template-columns:1.1fr 0.9fr;
+    gap:56px;
+    align-items:center;
+  }
+  .eyebrow{
+    display:flex; align-items:center; gap:10px;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px; letter-spacing:0.14em; text-transform:uppercase;
+    color:var(--alert);
+    margin-bottom:20px;
+  }
+  .eyebrow::before{content:"●"; font-size:8px;}
+  h1{font-size:clamp(34px,5vw,54px); font-weight:600; margin-bottom:20px;}
+  h1 em{font-style:italic; color:var(--gold); font-weight:500;}
+  .hero-sub{font-size:18px; color:#3c4a56; max-width:46ch; margin-bottom:32px;}
+  .hero-photo{
+    position:relative;
+    border-radius:4px;
+    overflow:hidden;
+    box-shadow:0 30px 60px -20px rgba(20,41,66,0.45);
+  }
+  .hero-photo img{aspect-ratio:4/3; object-fit:cover;}
+  .hero-photo .cachet{
+    position:absolute; top:18px; right:18px;
+    background:var(--white);
+    border-radius:50%;
+  }
+  .hero-cta-row{display:flex; align-items:center; gap:20px; flex-wrap:wrap;}
+
+  /* ---------- BUTTONS ---------- */
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:10px;
+    background:var(--navy);
+    color:var(--white);
+    font-family:'IBM Plex Sans', sans-serif;
+    font-weight:600;
+    font-size:16px;
+    padding:16px 30px;
+    border-radius:3px;
+    border:none;
+    cursor:pointer;
+    text-decoration:none;
+    transition:transform .15s ease, background .15s ease;
+  }
+  .btn:hover{background:var(--navy-2); transform:translateY(-1px);}
+  .btn-gold{background:var(--gold); color:var(--navy);}
+  .btn-gold:hover{background:#d8b565;}
+  .price-tag{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:14px;
+    color:#3c4a56;
+  }
+  .price-tag b{color:var(--navy); font-size:16px;}
+
+  /* ---------- SECTION SCAFFOLDING ---------- */
+  section{padding:72px 0;}
+  .section-label{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px; letter-spacing:0.14em; text-transform:uppercase;
+    color:var(--gold);
+    margin-bottom:14px;
+  }
+  section h2{font-size:clamp(26px,3.4vw,36px); font-weight:600; margin-bottom:20px; max-width:26ch;}
+  .rule{height:1px; background:rgba(20,41,66,0.14); border:none;}
+
+  /* ---------- PROBLEM ---------- */
+  .problem{background:var(--navy); color:var(--paper);}
+  .problem h2{color:var(--white);}
+  .problem .section-label{color:var(--gold);}
+  .problem-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:28px; margin-top:40px;}
+  .problem-card{
+    border:1px solid rgba(246,241,228,0.18);
+    padding:26px 22px;
+    border-radius:4px;
+  }
+  .problem-card .num{
+    font-family:'IBM Plex Mono', monospace;
+    color:var(--gold);
+    font-size:13px;
+    display:block;
+    margin-bottom:14px;
+  }
+  .problem-card p{color:rgba(246,241,228,0.82); font-size:15px;}
+  .problem-card strong{color:var(--white); display:block; font-size:17px; margin-bottom:8px; font-family:'Fraunces',serif; font-weight:600;}
+
+  /* ---------- DOSSIER (contenu du guide) ---------- */
+  .dossier{
+    background:var(--white);
+    border:1px solid rgba(20,41,66,0.15);
+    border-radius:6px;
+    padding:8px 0;
+    margin-top:36px;
+  }
+  .dossier-row{
+    display:grid;
+    grid-template-columns:64px 1fr;
+    gap:18px;
+    padding:16px 28px;
+    align-items:baseline;
+    border-bottom:1px dashed rgba(20,41,66,0.14);
+  }
+  .dossier-row:last-child{border-bottom:none;}
+  .dossier-row .no{font-family:'IBM Plex Mono', monospace; color:var(--gold); font-size:13px;}
+  .dossier-row .title{font-weight:600; color:var(--navy); font-size:15.5px;}
+  .dossier-row .part{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:10.5px;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    color:#8a7350;
+    display:block;
+    margin-bottom:3px;
+  }
+
+  /* ---------- AUTHOR ---------- */
+  .author{display:grid; grid-template-columns:0.85fr 1.15fr; gap:56px; align-items:center;}
+  .author-frame{
+    border:2.5px solid var(--navy);
+    padding:14px;
+    border-radius:4px;
+  }
+  .author-frame .inner{
+    background:var(--paper-2);
+    aspect-ratio:1/1;
+    border-radius:2px;
+    display:flex; align-items:center; justify-content:center;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    color:#8a7350;
+    text-align:center;
+    padding:20px;
+  }
+  .author-quote{font-family:'Fraunces', serif; font-size:22px; font-weight:500; color:var(--navy); margin-bottom:18px;}
+  .author p{color:#3c4a56; margin-bottom:14px;}
+
+  /* ---------- BONUS ---------- */
+  .bonus{
+    background:var(--paper-2);
+    border:1px solid rgba(201,162,75,0.4);
+    border-radius:6px;
+    padding:36px;
+    display:flex;
+    gap:26px;
+    align-items:flex-start;
+  }
+  .bonus .stamp{width:84px; height:84px; font-size:9px;}
+  .bonus h3{font-size:20px; margin-bottom:8px;}
+  .bonus p{color:#3c4a56; font-size:15px;}
+  .bonus .powered{
+    display:inline-block; margin-top:14px;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11.5px; letter-spacing:0.08em; text-transform:uppercase;
+    color:var(--navy);
+    border-bottom:1px solid var(--gold);
+    padding-bottom:2px;
+  }
+
+  /* ---------- PRICING ---------- */
+  .pricing{background:var(--navy); color:var(--white);}
+  .price-card{
+    max-width:520px; margin:44px auto 0;
+    background:var(--white);
+    color:var(--ink);
+    border-radius:8px;
+    padding:44px 40px;
+    text-align:center;
+  }
+  .price-card .amount{
+    font-family:'Fraunces', serif;
+    font-size:56px;
+    font-weight:600;
+    color:var(--navy);
+  }
+  .price-card .amount span{font-size:20px; font-family:'IBM Plex Mono',monospace; color:#8a7350; vertical-align:middle;}
+  .price-includes{
+    list-style:none;
+    text-align:left;
+    margin:26px 0 32px;
+    display:grid;
+    gap:11px;
+  }
+  .price-includes li{display:flex; gap:10px; font-size:15px; color:#3c4a56;}
+  .price-includes li::before{content:"✓"; color:var(--gold); font-weight:700;}
+  .pay-methods{
+    margin-top:18px;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11.5px;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    color:#8a7350;
+  }
+  #cinetpay-btn{width:100%;}
+  #cinetpay-btn:disabled{opacity:.6; cursor:wait;}
+
+  /* ---------- GALLERY ---------- */
+  .gallery{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:14px;
+    margin-top:36px;
+  }
+  .gallery figure{
+    position:relative;
+    border-radius:4px;
+    overflow:hidden;
+    aspect-ratio:3/4;
+  }
+  .gallery img{width:100%; height:100%; object-fit:cover;}
+  .gallery figcaption{
+    position:absolute; left:0; right:0; bottom:0;
+    padding:14px 12px 10px;
+    background:linear-gradient(to top, rgba(20,41,66,0.92), rgba(20,41,66,0));
+    color:var(--white);
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+  }
+
+  /* ---------- FAQ ---------- */
+  .faq-item{padding:22px 0; border-bottom:1px solid rgba(20,41,66,0.14);}
+  .faq-item:first-child{border-top:1px solid rgba(20,41,66,0.14);}
+  .faq-item summary{
+    cursor:pointer;
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    font-size:18px;
+    color:var(--navy);
+    list-style:none;
+    display:flex; justify-content:space-between; align-items:center;
+  }
+  .faq-item summary::-webkit-details-marker{display:none;}
+  .faq-item summary::after{content:"+"; font-size:22px; color:var(--gold); font-family:'IBM Plex Mono',monospace;}
+  .faq-item[open] summary::after{content:"–";}
+  .faq-item p{margin-top:12px; color:#3c4a56; max-width:64ch;}
+
+  /* ---------- FOOTER ---------- */
+  footer{padding:40px 0; text-align:center;}
+  footer .brand{justify-content:center; display:flex; margin-bottom:8px;}
+  footer p{font-size:13px; color:#8a7350;}
+
+  @media (max-width: 860px){
+    .hero-grid, .author{grid-template-columns:1fr; gap:36px;}
+    .author{direction:ltr;}
+    .author-frame{max-width:220px;}
+    .problem-grid{grid-template-columns:1fr;}
+    .bonus{flex-direction:column;}
+    .price-card{padding:32px 26px;}
+    .gallery{grid-template-columns:repeat(2,1fr);}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="brand">HolFrid <em>Digital</em></div>
+    <a href="#offre" class="mono" style="font-size:12px; letter-spacing:0.1em;">Obtenir le guide →</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Guide 100% terrain — pas une brochure d'agence</div>
+      <h1>N'arrive pas en&nbsp;Russie <em>les yeux fermés</em></h1>
+      <p class="hero-sub">Le guide de A à Z pour préparer ses études en Russie sans tomber dans les mensonges des agences — visa, villes, banques, jobs étudiants. Écrit par quelqu'un qui y est arrivé, un jour, avec un simple visa étudiant.</p>
+      <div class="hero-cta-row">
+        <a href="#offre" class="btn btn-gold">Obtenir le guide — 10 000 FCFA</a>
+        <span class="price-tag">+ <b>consultation gratuite</b> incluse</span>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="cover.jpg" alt="Moscou au crépuscule, Kremlin et cathédrales">
+      <div class="cachet stamp"><span>Vécu &amp; vérifié</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="problem">
+  <div class="wrap">
+    <div class="section-label">Le vrai problème</div>
+    <h2>Chaque année, des centaines d'étudiants tombent dans le même piège</h2>
+    <div class="problem-grid">
+      <div class="problem-card">
+        <span class="num">01</span>
+        <strong>Fausses promesses</strong>
+        <p>Admissions floues, bourses inventées, frais gonflés — les agences vendent la confiance, pas l'information.</p>
+      </div>
+      <div class="problem-card">
+        <span class="num">02</span>
+        <strong>Erreurs de visa</strong>
+        <p>Un enregistrement migratoire manqué dans les 7 jours, et c'est le statut légal tout entier qui bascule.</p>
+      </div>
+      <div class="problem-card">
+        <span class="num">03</span>
+        <strong>Mauvais choix de ville</strong>
+        <p>Budget, filière, climat — un choix fait à l'aveugle coûte cher pendant des années, pas juste au départ.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contenu">
+  <div class="wrap-narrow">
+    <div class="section-label">Ce que contient le guide</div>
+    <h2>12 chapitres, un dossier complet — rien laissé au hasard</h2>
+    <div class="dossier">
+      <div class="dossier-row"><span class="no">01—03</span><div><span class="part">Avant de partir</span><span class="title">Système universitaire, pièges des agences, budget réel</span></div></div>
+      <div class="dossier-row"><span class="no">04—05</span><div><span class="part">Visa &amp; statut légal</span><span class="title">Le visa étape par étape, rester en règle sur place</span></div></div>
+      <div class="dossier-row"><span class="no">06—07</span><div><span class="part">Choisir sa ville</span><span class="title">Comparatif des villes étudiantes, comment choisir la sienne</span></div></div>
+      <div class="dossier-row"><span class="no">08—10</span><div><span class="part">Vie pratique</span><span class="title">Banque &amp; transferts d'argent, logement, santé</span></div></div>
+      <div class="dossier-row"><span class="no">11—12</span><div><span class="part">S'intégrer &amp; après</span><span class="title">Jobs étudiants légaux, résidence, statut après le diplôme</span></div></div>
+      <div class="dossier-row"><span class="no">＋</span><div><span class="part">Bonus</span><span class="title">Villes à visiter en été, checklist finale, lexique, FAQ</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap author">
+    <div class="author-frame">
+      <div class="inner">[ Photo de l'auteur ]</div>
+    </div>
+    <div>
+      <div class="section-label">Qui a écrit ce guide</div>
+      <p class="author-quote">« Je ne l'ai pas cherché en ligne. Je l'ai vécu. »</p>
+      <p>Ce guide n'est pas rédigé depuis un bureau à l'étranger. Il est écrit par quelqu'un qui vit en Russie, qui y est arrivé un jour avec un visa étudiant, qui a traversé les mêmes démarches, les mêmes doutes — et qui connaît les pièges parce qu'il les a vus.</p>
+      <p>L'objectif : te donner l'information que les agences n'ont aucun intérêt à te donner, pour que tu arrives préparé, en règle, et avec les bons repères dès le premier jour.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap-narrow">
+    <div class="bonus">
+      <div class="stamp"><span>Offert</span></div>
+      <div>
+        <h3>Consultation gratuite incluse</h3>
+        <p>Chaque acheteur du guide a droit à une consultation gratuite pour poser ses questions spécifiques et affiner son projet d'études.</p>
+        <span class="powered">Powered by Midzo Flight</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-label">Aperçu du guide</div>
+    <h2>Et une fois les démarches réglées, la Russie a aussi ça à offrir</h2>
+    <div class="gallery">
+      <figure><img src="ville-spb.jpg" alt="Saint-Pétersbourg, nuits blanches"><figcaption>Saint-Pétersbourg</figcaption></figure>
+      <figure><img src="ville-kazan.jpg" alt="Kazan, le Kremlin"><figcaption>Kazan</figcaption></figure>
+      <figure><img src="ville-sochi.jpg" alt="Sotchi, mer et montagnes"><figcaption>Sotchi</figcaption></figure>
+      <figure><img src="ville-goldenring.jpg" alt="Dômes dorés, Anneau d'Or"><figcaption>Anneau d'Or</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="pricing" id="offre">
+  <div class="wrap-narrow" style="text-align:center;">
+    <div class="section-label" style="text-align:center;">L'offre</div>
+    <h2 style="color:#fff; margin:0 auto;">Un seul prix. Tout inclus.</h2>
+
+    <div class="price-card">
+      <div class="amount">10 000 <span>FCFA</span></div>
+      <ul class="price-includes">
+        <li>Le guide complet en PDF (20 pages) — accès immédiat après paiement</li>
+        <li>12 chapitres + bonus villes d'été, checklist, lexique, FAQ</li>
+        <li>Une consultation gratuite, powered by Midzo Flight</li>
+      </ul>
+
+      <button id="cinetpay-btn" class="btn btn-gold" onclick="payerAvecCinetPay()">Payer avec Mixx, Moov Money ou carte</button>
+      <div class="pay-methods">Mixx by YAS · Moov Money · Carte bancaire</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap-narrow">
+    <div class="section-label">Questions fréquentes</div>
+    <h2>Avant d'acheter</h2>
+
+    <details class="faq-item">
+      <summary>Comment je reçois le guide après le paiement ?</summary>
+      <p>Dès que ton paiement est confirmé, le lien de téléchargement du PDF s'affiche automatiquement et t'est envoyé par email/WhatsApp.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Le guide remplace-t-il une agence ?</summary>
+      <p>Non — il te donne les clés pour reconnaître une agence sérieuse d'une arnaque, et pour faire toi-même les démarches essentielles sans dépendre entièrement de quelqu'un d'autre.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Comment fonctionne la consultation gratuite ?</summary>
+      <p>Une fois le guide acheté, tu reçois les coordonnées pour prendre rendez-vous, powered by Midzo Flight.</p>
+    </details>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="brand">HolFrid <em>Digital</em></div>
+    <p>© 2026 HolFrid Digital — Étudier en Russie sans se faire piéger</p>
+  </div>
+</footer>
+
+<script>
+/*
+  ============================================================
+  INTÉGRATION CINETPAY — à compléter avant mise en ligne
+  ============================================================
+  1. Crée un compte marchand sur https://cinetpay.com
+  2. Récupère ton APIKEY et ton SITE_ID dans le tableau de bord
+  3. Remplace les valeurs ci-dessous
+  4. notify_url : une URL sur ton backend (ex: fonction Supabase Edge)
+     qui reçoit la confirmation de paiement et déclenche l'envoi du PDF
+  5. return_url : la page affichée après paiement (ex: /merci.html
+     avec le lien de téléchargement)
+  ============================================================
+*/
+function payerAvecCinetPay(){
+  const btn = document.getElementById('cinetpay-btn');
+  btn.disabled = true;
+  btn.textContent = 'Chargement...';
+
+  CinetPay.setConfig({
+    apikey: 'TON_APIKEY_CINETPAY',
+    site_id: 'TON_SITE_ID_CINETPAY',
+    notify_url: 'https://TON-PROJET.supabase.co/functions/v1/cinetpay-notify',
+    mode: 'PRODUCTION' // ou 'TEST' pendant les essais
+  });
+
+  CinetPay.getCheckout({
+    transaction_id: String(Date.now()),
+    amount: 10000,
+    currency: 'XOF',
+    channels: 'MOBILE_MONEY',
+    description: 'Guide — Étudier en Russie sans se faire piéger',
+    customer_name: '',
+    customer_surname: '',
+    return_url: window.location.origin + '/merci.html'
+  });
+
+  CinetPay.waitResponse(function(data){
+    btn.disabled = false;
+    btn.textContent = 'Payer avec Mixx, Moov Money ou carte';
+    if (data.status === "REFUSED") {
+      alert("Paiement refusé. Réessaie ou contacte-nous sur WhatsApp.");
+    } else if (data.status === "ACCEPTED") {
+      window.location.href = '/merci.html';
+    }
+  });
+
+  CinetPay.onError(function(data){
+    btn.disabled = false;
+    btn.textContent = 'Payer avec Mixx, Moov Money ou carte';
+    console.error(data);
+  });
+}
+</script>
+
+</body>
+</html>
